@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Tarjeta tarjeta = new Tarjeta();
-
+        Cuenta cuenta = new Cuenta();
         Scanner ingreso = new Scanner(System.in);
+
 
         System.out.println("Ingrese su número de tarjeta: ");
 
@@ -22,16 +23,11 @@ public class Main {
                 System.out.println("1. Consultar Saldo");
                 System.out.println("2. Salir");
                 opc = ingreso.nextInt();
-                switch (opc) {
-                    case 1:
 
-                        break;
-                    case 2:
-                        System.out.println("\tGracias por usar nuestros servicios");
-                        break;
-                    default:
-                        System.out.println("Ingrese una opcion valida");
-                        break;
+                switch (opc) {
+                    case 1 -> System.out.println(cuenta.consultarSaldo(numero));
+                    case 2 -> System.out.println("\tGracias por usar nuestros servicios");
+                    default -> System.out.println("Ingrese una opcion valida");
                 }
             } while (opc != 2);
         } else {
