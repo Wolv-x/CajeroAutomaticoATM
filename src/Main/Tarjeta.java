@@ -18,11 +18,10 @@ public class Tarjeta {
 
     //Metodo de consulta con la base de datos
     public boolean validarTarjeta(String numeroTarjeta, String clave) {
-        System.out.println("numeroo "+numeroTarjeta);
+        System.out.println("aa"+tarjetas.get(numeroTarjeta));
+
         if(tarjetas.containsKey(numeroTarjeta)){//consultar en BD
-            if(tarjetas.get(numeroTarjeta) == clave){
-                System.out.println("numeroo "+numeroTarjeta);
-                System.out.println("Clave "+clave);
+            if(tarjetas.get(numeroTarjeta).equals(clave)){
                 return true;
             }
         }else{
