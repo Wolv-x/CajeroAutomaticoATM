@@ -8,7 +8,6 @@ public class Main {
         Cuenta cuenta = new Cuenta();
         Scanner ingreso = new Scanner(System.in);
 
-
         System.out.println("Ingrese su número de tarjeta: ");
 
         String numero = ingreso.next();
