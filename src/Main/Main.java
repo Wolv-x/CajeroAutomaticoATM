@@ -24,7 +24,7 @@ public class Main {
                 opc = ingreso.nextInt();
 
 
-                //primer refactor
+                //validar que no se ingresen letras
                 switch (opc) {
                     case 1 -> System.out.println(cuenta.consultarSaldo(numero));
                     case 2 -> System.out.println("\tGracias por usar nuestros servicios");
@@ -37,6 +37,12 @@ public class Main {
         }
     }
     //Substitute algorithm over line 18-37
+
+    //bloqueo de cuenta validacion por validacion
+    //
+    // .
+
+    //escaner separarlo para que no este en el metodo
 
 
 
