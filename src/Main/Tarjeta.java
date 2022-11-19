@@ -18,11 +18,11 @@ public class Tarjeta {
 
     //Metodo de consulta con la base de datos
     public boolean validarTarjeta(String numeroTarjeta, String clave) {
-        //validar 16 numeros de tarjeta all en la misma seccion
+        //validar 16 numeros de tarjeta all en la misma seccion-->6to Gabriel
         //*********************************************//
-        //validar 3 digitos de la clave all ahi mismo
+        //validar 3 digitos de la clave all ahi mismo -->7mo Gabriel
         //*********************************************//
-        //validar si se ingresa numeros y no texto all ahi mismo
+        //validar si se ingresa numeros y no texto all ahi mismo -->8vo Nicolas --> /metodo deteccion Dennis
         //*********************************************//
         if(tarjetas.containsKey(numeroTarjeta)){//consultar en BD
             return tarjetas.get(numeroTarjeta).equals(clave);
@@ -31,8 +31,8 @@ public class Tarjeta {
         }
 
     }
-    //cambiar contraseña
-    // validar si se ingresa texto
+    // cambiar contraseña -->9no Nicolas --> contraseña de 3 digitos
+    // validar si se ingresa texto-->/Dennis
 
     //
 

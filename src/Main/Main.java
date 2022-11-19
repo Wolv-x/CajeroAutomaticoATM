@@ -24,7 +24,7 @@ public class Main {
                 opc = ingreso.nextInt();
 
 
-                //validar que no se ingresen letras
+                //validar que no se ingresen letras --> 5to Dennis
                 switch (opc) {
                     case 1 -> System.out.println(cuenta.consultarSaldo(numero));
                     case 2 -> System.out.println("\tGracias por usar nuestros servicios");
@@ -36,14 +36,18 @@ public class Main {
             System.out.println("\tGracias por usar nuestros servicios");
         }
     }
-    //Substitute algorithm over line 18-37
+    //Substitute algorithm over line 18-37 --> 3ro Gabriel
 
-    //bloqueo de cuenta validacion por validacion
+
+    //bloqueo de cuenta validacion por validacion NOOOOOOO
     //
     // .
 
-    //escaner separarlo para que no este en el metodo
 
+    //escaner separarlo para que no este en el metodo --> 4to GABRIEL
+
+
+    ///////////////Crear nueva clase y mover metodos del main
 
 
 
