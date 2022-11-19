@@ -31,5 +31,9 @@ public class Tarjeta {
         }
 
     }
+    //cambiar contraseña
+    // validar si se ingresa texto
+
+    //
 
 }
