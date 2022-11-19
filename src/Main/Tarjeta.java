@@ -24,20 +24,20 @@ public class Tarjeta {
         //*********************************************//
         //validar si se ingresa numeros y no texto all ahi mismo -->8vo Nicolas --> /metodo deteccion Dennis
         //*********************************************//
-        if(numeroTarjeta.length()>16 || numeroTarjeta.length()<0){
+        if (numeroTarjeta.length() > 16 || numeroTarjeta.length() == 0) {
             return false;
-        }else{
-            if(clave.length()>3 || clave.length()<0){
+        } else {
+            if (clave.length() > 3 || clave.length() == 0) {
                 return false;
-            }else{
-                if(tarjetas.containsKey(numeroTarjeta)){//consultar en BD
+            } else {
+                if (tarjetas.containsKey(numeroTarjeta)) {//consultar en BD
                     return tarjetas.get(numeroTarjeta).equals(clave);
-                }else{
+                } else {
                     return false;
                 }
             }
         }
-
+/*
         if(tarjetas.containsKey(numeroTarjeta)){//consultar en BD
             return tarjetas.get(numeroTarjeta).equals(clave);
         }else{
@@ -45,9 +45,11 @@ public class Tarjeta {
         }
 
     }
-    // cambiar contraseña -->9no Nicolas --> contraseña de 3 digitos
-    // validar si se ingresa texto-->/Dennis
 
-    //
+ */
+        // cambiar contraseña -->9no Nicolas --> contraseña de 3 digitos
+        // validar si se ingresa texto-->/Dennis
 
+        //
+    }
 }
