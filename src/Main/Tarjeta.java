@@ -24,6 +24,20 @@ public class Tarjeta {
         //*********************************************//
         //validar si se ingresa numeros y no texto all ahi mismo -->8vo Nicolas --> /metodo deteccion Dennis
         //*********************************************//
+        if(numeroTarjeta.length()>16 || numeroTarjeta.length()<0){
+            return false;
+        }else{
+            if(clave.length()>3 || clave.length()<0){
+                return false;
+            }else{
+                if(tarjetas.containsKey(numeroTarjeta)){//consultar en BD
+                    return tarjetas.get(numeroTarjeta).equals(clave);
+                }else{
+                    return false;
+                }
+            }
+        }
+
         if(tarjetas.containsKey(numeroTarjeta)){//consultar en BD
             return tarjetas.get(numeroTarjeta).equals(clave);
         }else{
