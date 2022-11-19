@@ -23,6 +23,8 @@ public class Main {
                 System.out.println("2. Salir");
                 opc = ingreso.nextInt();
 
+
+                //primer refactor
                 switch (opc) {
                     case 1 -> System.out.println(cuenta.consultarSaldo(numero));
                     case 2 -> System.out.println("\tGracias por usar nuestros servicios");
@@ -34,4 +36,9 @@ public class Main {
             System.out.println("\tGracias por usar nuestros servicios");
         }
     }
+    //Extract method over line 18-37
+
+
+
+
 }

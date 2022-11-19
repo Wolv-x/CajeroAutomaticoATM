@@ -12,6 +12,7 @@ public class Cuenta {
         cuenta.put("4278174463982835", 0.2F);
         cuenta.put("27", 300.2F);
     }
+    //Consulta el saldo
     public float consultarSaldo(String numeroTarjeta){
         return cuenta.get(numeroTarjeta);
     }
