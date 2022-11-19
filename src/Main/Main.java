@@ -36,7 +36,7 @@ public class Main {
             System.out.println("\tGracias por usar nuestros servicios");
         }
     }
-    //Extract method over line 18-37
+    //Substitute algorithm over line 18-37
 
 
 
