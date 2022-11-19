@@ -3,18 +3,18 @@ package Main;
 import java.util.Scanner;
 
 public class Main {
+
+
     public static void main(String[] args) {
         Tarjeta tarjeta = new Tarjeta();
+
         Cuenta cuenta = new Cuenta();
         Scanner ingreso = new Scanner(System.in);
-
         System.out.println("Ingrese su número de tarjeta: ");
-
         String numero = ingreso.next();
-
         System.out.println("Ingrese su clave: ");
-
         String clave = ingreso.next();
+
         if (tarjeta.validarTarjeta(numero, clave)) {
             int opc;
             do {
