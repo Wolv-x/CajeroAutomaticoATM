@@ -8,7 +8,6 @@ public class Teclado {
     private Teclado() {
         ingreso = new Scanner(System.in);
     }
-
     public String getEntrada() {
         return ingreso.next();
     }
