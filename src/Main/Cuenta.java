@@ -16,4 +16,7 @@ public class Cuenta {
     public float consultarSaldo(String numeroTarjeta){
         return cuenta.get(numeroTarjeta);
     }
+
+    //Deposito cuenta propia sobre la misma cuenta
+
 }
