@@ -14,7 +14,6 @@ public class Tarjeta {
         tarjetas.put("4716050069748111", "672");
         tarjetas.put("4485305457933389", "345");
         tarjetas.put("4278174463982835", "987");
-        tarjetas.put("271546", "121");
     }
 
     //Metodo de consulta con la base de datos
@@ -28,7 +27,6 @@ public class Tarjeta {
                 if (Teclado.isNumeric(numeroTarjeta) && Teclado.isNumeric(clave)) {
                     if (tarjetas.containsKey(numeroTarjeta)) {//consultar en BD
                         //unica opcion viable para retornar verdadero
-                        System.out.println("Pare");
                         return tarjetas.get(numeroTarjeta).equals(clave);
                     }
                 }
