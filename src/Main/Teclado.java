@@ -14,6 +14,11 @@ public class Teclado {
     }
     public static boolean isNumeric(String cadena) {
         try {
+            if(cadena.length()==16){
+                Integer.parseInt(cadena.substring(0,8));
+                Integer.parseInt(cadena.substring(8,15));
+                return true;
+            }
             Integer.parseInt(cadena);
             return true;
         } catch (NumberFormatException nfe) {

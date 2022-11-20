@@ -13,19 +13,22 @@ public class Menu {
         String clave = ingreso.getEntrada();
         if (tarjeta.validarTarjeta(numero, clave)) {
             String opc;
+
             do {
                 System.out.println("\tMENU");
                 System.out.println("1. Consultar Saldo");
-                System.out.println("2. Salir");
+                System.out.println("2. Cambiar clave");
+                System.out.println("3. Salir");
                 opc = ingreso.getEntrada();
                 if (Teclado.isNumeric(opc)) {
                     switch (Integer.parseInt(opc)) {
                         case 1 -> System.out.println(cuenta.consultarSaldo(numero));
-                        case 2 -> System.out.println("\tGracias por usar nuestros servicios");
+                        case 2 -> tarjeta.cambiarClave(numero, clave);
+                        case 3 -> System.out.println("\tGracias por usar nuestros servicios");
                         default -> System.out.println("Ingrese una opcion valida");
                     }
                 }
-            } while (Integer.parseInt(opc) != 2);
+            } while (Integer.parseInt(opc) != 3);
         } else {
             System.out.println("Credenciales erroneas");
             System.out.println("\tGracias por usar nuestros servicios");
