@@ -10,6 +10,7 @@ public class Tarjeta {
         tarjetas = new HashMap<>();
         ingreso = new Teclado();
         //numeros de cuenta de 6 digitos
+        //            clave           contraseña
         tarjetas.put("4271900557374142", "123");
         tarjetas.put("4716050069748111", "672");
         tarjetas.put("4485305457933389", "345");
